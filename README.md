@@ -33,15 +33,18 @@
 
     cd ScoreCard/
     python scorecard.py
-
+    
 ### 目录结构
+略
 
-![目录结构](https://github.com/xumoremore/data-analysis-system-/blob/master/introducepicture/1.png)
+## 展示
 
-### demo
+### LR的KS曲线
 
-下面链接为打包好的.exe可执行文件，可直接运行，但要使用数据库功能电脑需要安装mysql数据库。
+![ks曲线](https://github.com/xumoremore/ScoreCard/blob/main/docs/KS.png)
 
-可执行文件链接：[百度网盘](https://pan.baidu.com/s/128nFX1aRHE8157biClGq8Q)
+### 评分卡
 
-提取码：prto 
+![信用评分表](https://github.com/xumoremore/ScoreCard/blob/main/docs/scorecard.png)
+
+
