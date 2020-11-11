@@ -9,7 +9,7 @@
     - [训练模型](#训练模型)
     - [训练模型并生成评分卡](#训练模型并生成评分卡)
 - [展示](#展示)
-    - [LR的KS曲线](#LR的KS曲线)
+    - [模型评估](#模型评估)
     - [评分卡](#评分卡)
     
     
@@ -25,8 +25,8 @@
     odds = p/1-p
     theta*x = lr.coef_*woe = ln(1/1-p) = np.log(odds)
     score = A - B*np.log(odds) = A - B*lr.coef_*woe
-    points0 = A - B*np.log(odds0)    # points基准分
-    PO-PDO = A-B*np.log(2odds0)    # PD0翻倍比
+    points0 = A - B*np.log(odds0)    # points0基准分
+    points0-PDO = A-B*np.log(2odds0)    # PD0翻倍比
     => B = PD0/np.log2
     => A = points0 + B*np.log(odds0)
     score = points0 + B*lr.coef_*woe
@@ -59,7 +59,7 @@
 
 ## 展示
 
-### LR的KS曲线
+### 模型评估
 
 ![ks曲线](https://github.com/xumoremore/ScoreCard/blob/main/docs/KS.png)
 
